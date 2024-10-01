@@ -1,0 +1,41 @@
+[Device]
+Family=machxo2
+PartType=LCMXO2-2000HC
+PartName=LCMXO2-2000HC-5TG100C
+SpeedGrade=5
+Package=TQFP100
+OperatingCondition=COM
+Status=S
+
+[IP]
+VendorName=Lattice Semiconductor Corporation
+CoreType=LPM
+CoreStatus=Demo
+CoreName=Sin-Cos_Table
+CoreRevision=1.6
+ModuleName=nco
+SourceFormat=Verilog HDL
+ParameterFileVersion=1.0
+Date=09/26/2024
+Time=22:29:11
+
+[Parameters]
+Verilog=1
+VHDL=0
+EDIF=1
+Destination=Synplicity
+Expression=BusA(0 to 7)
+Order=[MSB:LSB]
+IO=0
+pmi_implemenntation=LUT
+pmi_dataa_width=8
+pmi_datab_width=10
+pmi_output_mode=Sin-Cos
+pmi_optimize_mem=1
+pmi_use_1bit=0
+pmi_input_reg=0
+pmi_output_reg=1
+pmi_pipeline=1
+
+[Command]
+cmd_line= -w -n nco -lang verilog -synth lse -bus_exp 7 -bb -arch xo2c00 -type cosine -addr_width 8 -width 10 -pfu -mode 2 -output_reg -area -pipeline 1

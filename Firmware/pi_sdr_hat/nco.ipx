@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DiamondModule name="nco" module="nco" VendorName="Lattice Semiconductor Corporation" generator="IPexpress" date="2024 09 26 22:29:12.602" version="1.6" type="Module" synthesis="lse" source_format="Verilog HDL">
+  <Package>
+		<File name="nco.lpc" type="lpc" modified="2024 09 26 22:29:11.000"/>
+		<File name="nco.v" type="top_level_verilog" modified="2024 09 26 22:29:12.000"/>
+		<File name="nco_tmpl.v" type="template_verilog" modified="2024 09 26 22:29:12.000"/>
+		<File name="tb_nco_tmpl.v" type="testbench_verilog" modified="2024 09 26 22:29:12.000"/>
+  </Package>
+</DiamondModule>

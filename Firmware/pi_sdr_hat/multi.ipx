@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DiamondModule name="multi" module="multi" VendorName="Lattice Semiconductor Corporation" generator="IPexpress" date="2024 09 26 22:29:10.080" version="4.9" type="Module" synthesis="lse" source_format="Verilog HDL">
+  <Package>
+		<File name="multi.lpc" type="lpc" modified="2024 09 26 22:29:09.000"/>
+		<File name="multi.v" type="top_level_verilog" modified="2024 09 26 22:29:09.000"/>
+		<File name="multi_tmpl.v" type="template_verilog" modified="2024 09 26 22:29:09.000"/>
+		<File name="tb_multi_tmpl.v" type="testbench_verilog" modified="2024 09 26 22:29:09.000"/>
+  </Package>
+</DiamondModule>

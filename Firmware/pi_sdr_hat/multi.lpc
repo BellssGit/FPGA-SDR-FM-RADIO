@@ -1,0 +1,44 @@
+[Device]
+Family=machxo2
+PartType=LCMXO2-2000HC
+PartName=LCMXO2-2000HC-5TG100C
+SpeedGrade=5
+Package=TQFP100
+OperatingCondition=COM
+Status=S
+
+[IP]
+VendorName=Lattice Semiconductor Corporation
+CoreType=LPM
+CoreStatus=Demo
+CoreName=Multiplier
+CoreRevision=4.9
+ModuleName=multi
+SourceFormat=Verilog HDL
+ParameterFileVersion=1.0
+Date=09/26/2024
+Time=22:29:09
+
+[Parameters]
+Verilog=1
+VHDL=0
+EDIF=1
+Destination=Synplicity
+Expression=BusA(0 to 7)
+Order=[MSB:LSB]
+IO=0
+pmi_implemenntation=LUT
+pmi_const_coeff=No
+pmi_coeff_value=2
+pmi_ram_mult=No
+pmi_dataa_width=10
+pmi_datab_width=10
+pmi_datap_width=20
+pmi_signa=Unsigned
+pmi_signb=Signed
+pmi_additional_pipeline=1
+pmi_input_reg=No
+pmi_output_reg=Yes
+
+[Command]
+cmd_line= -w -n multi -lang verilog -synth lse -bus_exp 7 -bb -arch xo2c00 -type dspmult -simple_portname -pfu_mult -widtha 10 -widthb 10 -widthp 20 -signed -unsigneda -PL_stages 1 -output_reg -clk0 -ce0 -rst0

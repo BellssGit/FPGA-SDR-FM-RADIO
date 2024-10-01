@@ -1,0 +1,31 @@
+<Project ModBy="Inserter" Name="/home/pnb/Lattice_prj/pi_sdr_hat/ila.rvl" Date="2024-09-24">
+    <Core Name="top_LA0">
+        <Setting>
+            <Capture SamplesPerTrig="0" NumTrigsCap=""/>
+            <Event EventCnt="" CntEnableRun=""/>
+            <TrigSetting PreTrgSamples="" AND_ALL="" PostTrgSamples="" TURadix="0"/>
+        </Setting>
+        <Dataset Name="Base">
+            <Trace>
+                <Bus Name="Dmod" Radix="0">
+                    <Sig Name="Dmod:0"/>
+                    <Sig Name="Dmod:1"/>
+                    <Sig Name="Dmod:2"/>
+                    <Sig Name="Dmod:3"/>
+                    <Sig Name="Dmod:4"/>
+                    <Sig Name="Dmod:5"/>
+                    <Sig Name="Dmod:6"/>
+                    <Sig Name="Dmod:7"/>
+                    <Sig Name="Dmod:8"/>
+                    <Sig Name="Dmod:9"/>
+                    <Sig Name="Dmod:10"/>
+                    <Sig Name="Dmod:11"/>
+                </Bus>
+            </Trace>
+            <Trigger>
+                <TU Operator="0" Name="TU1" ID="1" Value="0" Radix="0"/>
+                <TE Enable="1" Expression="TU1" Name="TE1" ID="1"/>
+            </Trigger>
+        </Dataset>
+    </Core>
+</Project>

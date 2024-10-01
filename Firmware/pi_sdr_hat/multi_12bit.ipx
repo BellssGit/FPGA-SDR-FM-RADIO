@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DiamondModule name="multi_12bit" module="multi_12bit" VendorName="Lattice Semiconductor Corporation" generator="IPexpress" date="2024 09 27 09:44:37.972" version="4.9" type="Module" synthesis="synplify" source_format="Verilog HDL">
+  <Package>
+		<File name="multi_12bit.lpc" type="lpc" modified="2024 09 27 09:44:36.000"/>
+		<File name="multi_12bit.v" type="top_level_verilog" modified="2024 09 27 09:44:37.000"/>
+		<File name="multi_12bit_tmpl.v" type="template_verilog" modified="2024 09 27 09:44:37.000"/>
+		<File name="tb_multi_12bit_tmpl.v" type="testbench_verilog" modified="2024 09 27 09:44:37.000"/>
+  </Package>
+</DiamondModule>

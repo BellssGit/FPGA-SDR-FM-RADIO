@@ -1,0 +1,36 @@
+<Project ModBy="Inserter" SigType="0" Name="/home/pnb/Lattice_prj/pi_sdr_hat/ila.rvl" Date="2024-09-24">
+    <IP Version="1_6_042617"/>
+    <Design DesignEntry="Schematic/Verilog HDL" Synthesis="synplify" DeviceFamily="MachXO2" DesignName="pi_sdr_hat"/>
+    <Core InsertDataset="0" Insert="1" Reveal_sig="577857569" Name="top_LA0" ID="0">
+        <Setting>
+            <Clock SampleClk="cic_out_clk_I" SampleEnable="0" EnableClk="" EnableClk_Pri="0"/>
+            <TraceBuffer Implementation="0" BitTimeStamp="0" hasTimeStamp="0" IncTrigSig="0" BufferDepth="2048"/>
+            <Capture Mode="0" MinSamplesPerTrig="8"/>
+            <Event CntEnable="0" MaxEventCnt="8"/>
+            <TrigOut Polarity="0" MinPulseWidth="0" TrigOutNetType="1" EnableTrigOut="0" TrigOutNet="reveal_debug_pi_sdr_hat_LA0_net"/>
+            <DistRAM Disable="0"/>
+        </Setting>
+        <Dataset Name="Base">
+            <Trace>
+                <Bus Name="Dmod">
+                    <Sig Type="SIG" Name="Dmod:0"/>
+                    <Sig Type="SIG" Name="Dmod:1"/>
+                    <Sig Type="SIG" Name="Dmod:2"/>
+                    <Sig Type="SIG" Name="Dmod:3"/>
+                    <Sig Type="SIG" Name="Dmod:4"/>
+                    <Sig Type="SIG" Name="Dmod:5"/>
+                    <Sig Type="SIG" Name="Dmod:6"/>
+                    <Sig Type="SIG" Name="Dmod:7"/>
+                    <Sig Type="SIG" Name="Dmod:8"/>
+                    <Sig Type="SIG" Name="Dmod:9"/>
+                    <Sig Type="SIG" Name="Dmod:10"/>
+                    <Sig Type="SIG" Name="Dmod:11"/>
+                </Bus>
+            </Trace>
+            <Trigger>
+                <TU Serialbits="0" Type="0" ID="1" Sig="cic_out_clk_I,"/>
+                <TE MaxSequence="1" MaxEvnCnt="1" ID="1" Resource="1"/>
+            </Trigger>
+        </Dataset>
+    </Core>
+</Project>

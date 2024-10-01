@@ -1,0 +1,42 @@
+`timescale 1ns/1ps
+module tb;
+
+GSR GSR_INST(.GSR(1'b1));
+PUR PUR_INST(.PUR(1'b1));
+
+reg clk;
+initial clk = 0 ;
+always #25 clk = ~clk;
+
+reg rst;
+initial begin
+	rst = 1;
+	#100 rst = 0;
+end
+
+reg [9:0] Xin;
+reg [11:0] count;
+reg [9:0] stimulus[1:2000];   
+
+initial begin
+	$readmemb("/home/pnb/sinewave.txt",stimulus);
+	//文件路径必须在simulation/modelsim中
+	count = 0;
+	repeat(2000)begin
+		count = count +1;
+		Xin   = stimulus[count];
+		#50;       //每隔1个时钟周期读入一个数据，相当于抽样频率50MHz
+	end
+end
+
+
+top inst (
+	.adc_clk(clk),
+	.adc_data(Xin),
+	.adc_or(),
+	.rst(rst),
+	
+	.lo()
+);
+
+endmodule
