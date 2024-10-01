@@ -1,9 +1,9 @@
 # FPGA-SDR-FM-RADIO
 FPGA based FM radio with traditional IF architecture and digital IQ demodulation
 
-more detail (chinese only):TBD
+[more detail (chinese only)](https://www.emoe.xyz/fpga_based_sdr_fm_radio/)
 
-demo video: TBD
+[demo video](https://www.bilibili.com/video/BV1SVxYeYEim/)
 
 credit: https://github.com/alberto-grl/1bitSDR
 
